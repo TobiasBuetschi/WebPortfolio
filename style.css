@@ -284,6 +284,11 @@ section {
 .btn-container{
     gap: 1rem;
 }
+.arrow1 {
+    position: absolute;
+    right: auto
+    bottom: 2.5rem;
+}
 /* About section */
 
 #about{
