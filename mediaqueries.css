@@ -35,7 +35,7 @@
     section {
         margin: 0 5%;
     }
-    .section__pic-container{
+    .section__pic__container{
         width: 275px;
         height: 275px;
         margin: 0 auto 2rem;
@@ -51,7 +51,7 @@
         height: 40vh;
     }
     #profile {
-        height: 100vh;
+        height: 86vh;
         margin-bottom: 0;
     }
     article {
@@ -84,9 +84,9 @@
         gap: 0.5rem;
         text-align: center;
     }
-    .section__pic-container {
+    .section__pic__container {
         width: auto;
-        height: 46vw;
+        height: 46vh;
         justify-content: center;
     }
     .section__text__p2 {
