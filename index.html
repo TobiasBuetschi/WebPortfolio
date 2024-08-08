@@ -1,333 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebPortfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
     <nav id="desktop-nav">
-        <div class="logo">Tobias Bütschi</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#erfahrung">Kenntnisse</a></li>
-                <li><a href="#projects">Projekte</a></li>
-                <li><a href="#contact">Kontakt</a></li>
-            </ul>
-        </div>
+      <div class="logo">Tobias Bütschi</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#erfahrung">Kenntnisse</a></li>
+          <li><a href="#projects">Projekte</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo">Tobias Bütschi</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#erfahrung" onclick="toggleMenu()">Kenntnisse</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projekte</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Kontakt</a></li>
-            </div>
+      <div class="logo">Tobias Bütschi</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#erfahrung" onclick="toggleMenu()">Kenntnisse</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projekte</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Kontakt</a></li>
+        </div>
+      </div>
     </nav>
     <section id="profile">
-        <div class="section__pic__container">
-            <img src="./assets/Buetschi_Tobias_02.jpg" alt="Tobias Bütschi Profilbild">
+      <div class="section__pic__container">
+        <img
+          src="./assets/Buetschi_Tobias_02.jpg"
+          alt="Tobias Bütschi Profilbild"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hallo, ich bin</p>
+        <h1 class="title">Tobias Bütschi</h1>
+        <p class="section__text__p2">/text/</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/CV.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Kontakt
+          </button>
         </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hallo, ich bin</p>
-            <h1 class="title">Tobias Bütschi</h1>
-            <p class="section__text__p2">/text/</p>
-            <div class="btn-container">
-                <button 
-                class="btn btn-color-2" 
-                onclick="window.open('./assets/CV.pdf')">
-                Download CV
-                </button>
-                <button 
-                class="btn btn-color-1" 
-                onclick="location.href='./#contact'">
-                Kontakt
-                </button>
-            </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" 
-                alt="My LinkedIn" 
-                class="icon" 
-                onclick="location.href='https://www.linkedin.com/in/tobias-b%C3%BCtschi/'">
-                <img src="./assets/github.png" 
-                alt="My GitHub" 
-                class="icon" 
-                onclick="location.href='https://github.com/TobiasBuetschi/'">
-            </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/tobias-b%C3%BCtschi/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My GitHub"
+            class="icon"
+            onclick="location.href='https://github.com/TobiasBuetschi/'"
+          />
         </div>
+      </div>
     </section>
     <section id="about">
-        <p class="section__text__p1">Erfahren Sie mehr</p>
-        <h1 class="title">Über mich</h1>
-        <div class="section-container">
-            <div class="section__pic__container">
-                <img 
-                src="./assets/About_pic_1.jpeg" 
-                alt="Profile picture" 
-                class="about-pic"
-                />
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/Person.png" 
-                        alt="Experience icon"
-                        class="icon"
-                        />
-                        <h3>Facts & Figures</h3>
-                        <p>
-                        10.04.1997 <br> 
-                        verheiratet <br>
-                        pflichtbewusst <br>
-                        loyal <br>
-                        zielstrebig <br>
-                        engagiert <br>
-                        kommunikativ <br>
-                        humorvoll
-                        </p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/Hobbys.png" 
-                        alt="Education icon"
-                        class="icon"
-                        />
-                        <h3>Hobbys</h3>
-                        <p>
-                        Gaming <br> 
-                        Kraftsport <br>
-                        Laufen <br>
-                        Cycling <br>
-                        Wassersport <br>
-                        Lesen
-                        </p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>Durch plötzlich aufgetretene Probleme an meinem Heimcomputer und das damit verbundene Troubleshooting hat sich meine Leidenschaft für Computer und Informatik neu entfacht, eine Leidenschaft, welche ich nun gerne zu meinem Beruf machen möchte. Ich bin bereit für eine komplett neue Herausforderung in einem Bereich mit großen Zukunftsaussichten. Obwohl ich keine klassische IT-Ausbildung durchlaufen habe, bringe ich großes Interesse und eine hohe Lernbereitschaft mit. 
-                        <br>
-                        <br>In meiner bisherigen Laufbahn beim Militärpolizei Sicherheitsdienst habe ich verschiedene sicherheitspolizeiliche Aufträge als Operator und als Einsatzleiter ausgeführt. Ich arbeitete im normalen Patrouillendienst im In- und Ausland, habe als Fahrer von Sonderschutzfahrzeugen Staatsoberhäupter, im Rahmen von Personenschutz, chauffiert und als bewaffneter Air Marshal die Flugzeuge der schweizerischen Airlines während des Fluges geschützt. Für diese Tätigkeiten musste ich die anspruchsvollsten polizeilichen Ausbildungen absolvieren und habe dabei bewiesen, dass ich komplexe Sachverhalte rasch erfassen und zielorientiert angehen kann. 
-                        <br>Ich bin ein begeisterter Computer und KI-Fan mit einer steilen Lernkurve. Ich bringe eine große Portion Neugier, Motivation und Durchhaltevermögen mit. In einem innovativen Umfeld kann ich mein volles Potenzial entfalten und mich schnell in verschiedenste Themen einarbeiten. 
-                    </p>
-                </div>
-            </div>
+      <p class="section__text__p1">Erfahren Sie mehr</p>
+      <h1 class="title">Über mich</h1>
+      <div class="section-container">
+        <div class="section__pic__container">
+          <img
+            src="./assets/About_pic_1.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
         </div>
-        <img src="./assets/arrow.png" 
-        alt="arrow icon" 
-        class="icon arrow" 
-        onclick="location.href='./#erfahrung'">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/Person.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Facts & Figures</h3>
+              <p>
+                10.04.1997 <br />
+                verheiratet <br />
+                pflichtbewusst <br />
+                loyal <br />
+                zielstrebig <br />
+                engagiert <br />
+                kommunikativ <br />
+                humorvoll
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/Hobbys.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Hobbys</h3>
+              <p>
+                Gaming <br />
+                Kraftsport <br />
+                Laufen <br />
+                Cycling <br />
+                Wassersport <br />
+                Lesen
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Durch plötzlich aufgetretene Probleme an meinem Heimcomputer und
+              das damit verbundene Troubleshooting hat sich meine Leidenschaft
+              für Computer und Informatik neu entfacht, eine Leidenschaft,
+              welche ich nun gerne zu meinem Beruf machen möchte. Ich bin bereit
+              für eine komplett neue Herausforderung in einem Bereich mit großen
+              Zukunftsaussichten. Obwohl ich keine klassische IT-Ausbildung
+              durchlaufen habe, bringe ich großes Interesse und eine hohe
+              Lernbereitschaft mit.
+              <br />
+              <br />In meiner bisherigen Laufbahn beim Militärpolizei
+              Sicherheitsdienst habe ich verschiedene sicherheitspolizeiliche
+              Aufträge als Operator und als Einsatzleiter ausgeführt. Ich
+              arbeitete im normalen Patrouillendienst im In- und Ausland, habe
+              als Fahrer von Sonderschutzfahrzeugen Staatsoberhäupter, im Rahmen
+              von Personenschutz, chauffiert und als bewaffneter Air Marshal die
+              Flugzeuge der schweizerischen Airlines während des Fluges
+              geschützt. Für diese Tätigkeiten musste ich die anspruchsvollsten
+              polizeilichen Ausbildungen absolvieren und habe dabei bewiesen,
+              dass ich komplexe Sachverhalte rasch erfassen und zielorientiert
+              angehen kann. <br />Ich bin ein begeisterter Computer und KI-Fan
+              mit einer steilen Lernkurve. Ich bringe eine große Portion
+              Neugier, Motivation und Durchhaltevermögen mit. In einem
+              innovativen Umfeld kann ich mein volles Potenzial entfalten und
+              mich schnell in verschiedenste Themen einarbeiten.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#erfahrung'"
+      />
     </section>
     <section id="erfahrung">
-        <p class="section__text__p1">Meine</p>
-        <h1 class="title">Kenntnisse</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Informatik</h2>
-                    <div class="article-container">
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="Experience icon" 
-                            class="icon"
-                            />
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Erfahren</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="Experience icon" 
-                            class="icon"
-                            />
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Erfahren</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="Experience icon" 
-                            class="icon"
-                            />
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Solide</p>
-                            </div>
-                        </article>
-                    </div>
+      <p class="section__text__p1">Meine</p>
+      <h1 class="title">Kenntnisse</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Informatik</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Erfahren</p>
                 </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Sprachen</h2>
-                    <div class="article-container">
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="Experience icon" 
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Deutsch</h3>
-                                <p>Muttersprache</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="Experience icon" 
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Englisch</h3>
-                                <p>B2+</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="Experience icon" 
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Französisch</h3>
-                                <p>B1</p>
-                            </div>
-                        </article>
-                    </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Erfahren</p>
                 </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Solide</p>
+                </div>
+              </article>
             </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Sprachen</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Deutsch</h3>
+                  <p>Muttersprache</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Englisch</h3>
+                  <p>B2+</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Französisch</h3>
+                  <p>B1</p>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
-        <img src="./assets/arrow.png" 
-        alt="arrow icon" 
-        class="icon arrow" 
-        onclick="location.href='./#projects'">
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
     </section>
     <section id="projects">
-        <p class="section__text__p1">Erkunden Sie meine aktuellen</p>
-        <h1 class="title">Projekte</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img 
-                    src="./assets/About_pic_2.jpeg" 
-                    alt="Projekt 1"
-                    class="project-img"
-                    />
-                </div>
-                <h2 class="experience-sub-title project-title">Projekt eins</h2>
-                <div class="btn-container">
-                    <button 
-                    class="btn btn-color-2 project-btn" 
-                    onklick="location.href='https://github.com/TobiasBuetschi/'">
-                        GitHub
-                    </button>
-                    <button 
-                    class="btn btn-color-2 project-btn" 
-                    onklick="location.href='https://github.com/TobiasBuetschi/'">
-                        Live Demo
-                    </button>
-                </div>
+      <p class="section__text__p1">Erkunden Sie meine aktuellen</p>
+      <h1 class="title">Projekte</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/About_pic_2.jpeg"
+                alt="Projekt 1"
+                class="project-img"
+              />
             </div>
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img 
-                    src="./assets/About_pic_2.jpeg" 
-                    alt="Projekt 2"
-                    class="project-img"
-                    />
-                </div>
-                <h2 class="experience-sub-title project-title">Projekt zwei</h2>
-                <div class="btn-container">
-                    <button 
-                    class="btn btn-color-2 project-btn" 
-                    onklick="location.href='https://github.com/TobiasBuetschi/'">
-                        GitHub
-                    </button>
-                    <button 
-                    class="btn btn-color-2 project-btn" 
-                    onklick="location.href='https://github.com/TobiasBuetschi/'">
-                        Live Demo
-                    </button>
-                </div>
+            <h2 class="experience-sub-title project-title">Projekt eins</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/TobiasBuetschi/Calculator'"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://tobiasbuetschi.github.io/Calculator/'"
+              >
+                Live Demo
+              </button>
             </div>
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img 
-                    src="./assets/About_pic_2.jpeg" 
-                    alt="Projekt 3"
-                    class="project-img"
-                    />
-                </div>
-                <h2 class="experience-sub-title project-title">Projekt drei</h2>
-                <div class="btn-container">
-                    <button 
-                    class="btn btn-color-2 project-btn" 
-                    onklick="location.href='https://github.com/TobiasBuetschi/'">
-                        GitHub
-                    </button>
-                    <button 
-                    class="btn btn-color-2 project-btn" 
-                    onklick="location.href='https://github.com/TobiasBuetschi/'">
-                        Live Demo
-                    </button>
-                </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/About_pic_2.jpeg"
+                alt="Projekt 2"
+                class="project-img"
+              />
             </div>
+            <h2 class="experience-sub-title project-title">Projekt zwei</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/TobiasBuetschi/Calculator'"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/TobiasBuetschi/Calculator'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/About_pic_2.jpeg"
+                alt="Projekt 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Projekt drei</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/TobiasBuetschi/Calculator'"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/TobiasBuetschi/Calculator'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
         </div>
-        </div>
-        <img src="./assets/arrow.png" 
-        alt="arrow icon" 
-        class="icon arrow" 
-        onclick="location.href='./#contact'">
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
     </section>
     <section id="contact">
-        <p class="section__text__p1">Sie möchten mich kennenlernen?</p>
-        <h1 class="title">Kontakt</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png" 
-                alt="Email icon"
-                class="icon contact-icon email-icon"
-                />
-                <p><a href="mailto:tobias.buetschi@gmail.com">tobias.buetschi@gmail.com</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin.png" 
-                alt="LinkedIn icon"
-                class="icon contact-icon"
-                />
-                <p><a href="https://www.linkedin.com/in/tobias-b%C3%BCtschi/">LinkedIn</a></p>
-            </div>
+      <p class="section__text__p1">Sie möchten mich kennenlernen?</p>
+      <h1 class="title">Kontakt</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:tobias.buetschi@gmail.com"
+              >tobias.buetschi@gmail.com</a
+            >
+          </p>
         </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/tobias-b%C3%BCtschi/"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
     </section>
     <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#erfahrung">Kenntnisse</a></li>
-                    <li><a href="#projects">Projekte</a></li>
-                    <li><a href="#contact">Kontakt</a></li>
-                </ul>
-            </div>
-        </nav>
-        <p>Copyright &#169; 2024 Tobias Bütschi. Alle Rechte vorbehalten. </p>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#erfahrung">Kenntnisse</a></li>
+            <li><a href="#projects">Projekte</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Tobias Bütschi. Alle Rechte vorbehalten.</p>
     </footer>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
