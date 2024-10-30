@@ -346,6 +346,7 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin: 0 25rem;
 }
 
 .article-container {
@@ -401,7 +402,7 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  height: 73vh;
 }
 
 .contact-info-upper-container {
