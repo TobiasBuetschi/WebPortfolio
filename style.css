@@ -398,6 +398,10 @@ article .icon {
 
 /* Kontackt Section */
 
+.projectParagraph {
+  font-size: 1rem;
+}
+
 #contact {
   display: flex;
   justify-content: center;
